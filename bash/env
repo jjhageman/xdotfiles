@@ -1,0 +1,5 @@
+export PATH=$PATH:/usr/local/bin:~/bin
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+
+export EDITOR=mvim
+

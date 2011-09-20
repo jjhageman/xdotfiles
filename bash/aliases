@@ -23,7 +23,7 @@ alias f='dscacheutil -flushcache'
 # MySQL
 alias mysqlserv="/usr/local/Cellar/mysql/5.1.49/share/mysql/mysql.server"
 alias mysqlreplal="mysql -u repl -h mysql.be.alchemy.affinitylabs.com -pejevPoj6 alchemy_production -P 3316"
-alias mysqlreplfw="mysql -u repl -h mysql.be.fastweb.affinitylabs.com -pejevPoj6 fastweb_production -P 3326"
+alias mysqlreplfw="mysql -u repl -h mysql.be.fastweb.affinitylabs.com -pejevPoj6 fastweb_production -P 3306"
 
 # SSH
 alias s="ssh deployment@stage"
@@ -58,6 +58,11 @@ function parse_git_dirty {
 }
 function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
+}
+
+# Hostfile
+function subdomain_host() {
+  echo "127.0.0.1 $1.fastweb.com" | sudo tee -a /etc/hosts
 }
 
 # brew

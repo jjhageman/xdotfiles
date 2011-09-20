@@ -10,7 +10,9 @@ syntax on
 set encoding=utf-8
 
 " Whitespace stuff
-set nowrap
+" set nowrap
+set wm=2
+set textwidth=80
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2

@@ -2,6 +2,7 @@
 alias ll="ls -alGh"
 alias ..="cd .."
 alias cdal="cd ~/repos/alchemy"
+alias cdfw="cd ~/repos/fastweb"
 alias cdaw="cd ~/repos/awards"
 alias cdch="cd /Developer/working/chemistry"
 

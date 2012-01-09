@@ -44,6 +44,13 @@ map <Leader>n :NERDTreeToggle<CR>
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
+" Mini Buffer Explorer configuration
+" let g:miniBufExplMapWindowNavVim = 1 
+" let g:miniBufExplMapWindowNavArrows = 1 
+ let g:miniBufExplMapCTabSwitchBufs = 1 
+" let g:miniBufExplModSelTarget = 1 
+
+
 " ZoomWin configuration
 map <Leader><Leader> :ZoomWin<CR>
 

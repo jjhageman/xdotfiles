@@ -2,7 +2,7 @@
 	name = Jeremy Hageman
 	email = jhageman@affinitylabs.com
 [core]
-	editor = mate -w
+	editor = mvim -f
 [color]
 	sh = auto
 	status = auto
@@ -22,3 +22,7 @@
 	user = jjhageman
 	token = 03fc0b2595393d0c4c3a0b64151ae57d
 
+[merge]
+	tool = opendiff
+[help]
+	autocorrect = 1

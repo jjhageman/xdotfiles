@@ -75,6 +75,7 @@ function subdomain_host() {
 }
 
 # brew
+alias bu="brew update && brew doctor && brew outdated"
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi

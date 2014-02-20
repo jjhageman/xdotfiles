@@ -47,15 +47,15 @@ if has("gui_macvim")
   map  <D-9> 9gt
   imap <D-9> <Esc>9gt
 
-  " Command-Option-ArrowKey to switch viewports
-  map <D-M-Up> <C-w>k
-  imap <D-M-Up> <Esc> <C-w>k
-  map <D-M-Down> <C-w>j
-  imap <D-M-Down> <Esc> <C-w>j
-  map <D-M-Right> <C-w>l
-  imap <D-M-Right> <Esc> <C-w>l
-  map <D-M-Left> <C-w>h
-  imap <D-M-Left> <C-w>h
+  "Switch viewports
+  nnoremap <C-h> <C-w>h
+  nnoremap <C-j> <C-w>j
+  nnoremap <C-k> <C-w>k
+  nnoremap <C-l> <C-w>l
+
+  "Open new split panes to right and bottom
+  set splitbelow
+  set splitright
 
   " Adjust viewports to the same size
   map <Leader>= <C-w>=
